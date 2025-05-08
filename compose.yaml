@@ -1,0 +1,6 @@
+﻿services:
+  bbq.api:
+    image: bbq.api
+    build:
+      context: .
+      dockerfile: BBQ.Api/Dockerfile
