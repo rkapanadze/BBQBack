@@ -1,9 +1,20 @@
-import Header from "./components/Header";
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Header from './components/Header'
+import About from './pages/About'
+import Homepage from './pages/HomePage'
 
-function App() {
+
+
+const App = () => {
   return (
-      <Header></Header>
-  );
+      <Router>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Homepage/>}/>
+          <Route path="/about" element={<About/>}/>
+        </Routes>
+      </Router>
+  )
 }
 
-export default App;
+export default App
