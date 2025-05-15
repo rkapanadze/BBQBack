@@ -31,10 +31,7 @@ public static class SauceAndRubs
         CancellationToken cancellationToken)
     {
         var query = context.SaucesAndRubs.AsQueryable();
-        if (request.type is not null)
-        {
-            query = query.Where(x => x.Type == request.type);
-        }
+        query = request.type is not null ? query.Where(x => x.Type == request.type) : query.OrderBy(x => x.Type);
 
         var result = await query.ToListAsync(cancellationToken);
         return Results.Ok(result);
