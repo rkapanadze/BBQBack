@@ -1,8 +1,15 @@
 {
-  "home":"Home",
-  "about":"About",
-  "menu":"Menu",
-  "sauces rubs":"Sauces & Rubs",
-  "merch":"Merch",
-  "orderinAdvance":"Order in Advance"
+  "companyName": "Rezi",
+  "home": "Home",
+  "about": "About",
+  "menu": "Menu",
+  "sauces rubs": "Sauces & Rubs",
+  "merch": "Merch",
+  "orderInAdvance": "Order in Advance",
+  "address": "Alio Mirtskhulava St",
+  "phone": "+(995) 577 603 716",
+  "mondayToFriday": "Mon.–Fri. 11AM - Sold Out",
+  "saturdayToSunday": "Sat.–Sun. 15:00 - Sold Out",
+  "facebook": "https://www.facebook.com/Rezo125",
+  "instagram": "https://www.instagram.com/kapanadzerezo/"
 }

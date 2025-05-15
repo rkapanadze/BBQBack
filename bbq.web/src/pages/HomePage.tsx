@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import plate from '../assets/plate.jpg';
+import useTranslation from "../locale/useTranslation";
 
 const Homepage = () => {
+  const {t} = useTranslation();
+  useEffect(() => {
+    document.title = t('companyName') + ' - ' + t('home')
+  }, [t]);
   return (
       <div>
         <img

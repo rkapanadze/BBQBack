@@ -55,7 +55,7 @@ const Header: React.FC = () => {
               onMouseEnter={() => setHover(true)}
               onMouseLeave={() => setHover(false)}
           >
-            {t('orderinAdvance')}
+            {t('orderInAdvance')}
           </Link>
           <LanguageSwitcher />
         </div>

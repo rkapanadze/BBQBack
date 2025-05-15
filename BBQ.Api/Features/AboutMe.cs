@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BBQ.Api.Features;
 
-public static class GetAboutMe
+public static class AboutMe
 {
     private record GetResponse(string FullName, string Bio);
 
@@ -60,7 +60,7 @@ public static class GetAboutMe
         if (existing)
             return Results.BadRequest("AboutMe already exists. Use PUT to update.");
 
-        var about = new AboutMe
+        var about = new Data.AboutMe
         {
             FullName = request.FullName,
             Bio = request.Bio
